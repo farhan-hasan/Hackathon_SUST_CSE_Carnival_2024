@@ -80,7 +80,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      "Channels",
+                      "My Channels",
                       style: TextStyle(fontSize: 24),
                     ),
                     SizedBox(height: 12,),
