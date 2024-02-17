@@ -72,51 +72,6 @@ class _HomeScreenState extends State<HomeScreen> {
 
     return Scaffold(
         backgroundColor: grayColor,
-        // appBar: AppBar(
-        //   title: Text("LearnLoom"),
-        //   backgroundColor: darkColor,
-        //   foregroundColor: Colors.white,
-        //   leading: Icon(Icons.person),
-        //   actions: [
-        //     Padding(
-        //       padding: const EdgeInsets.all(8.0),
-        //       child: Container(
-        //         decoration: BoxDecoration(
-        //           borderRadius: BorderRadius.circular(10),
-        //           color: grayColor,
-        //         ),
-        //         width: 100,
-        //         height: 30,
-        //         child: Center(
-        //             child: Text(
-        //           "Stream",
-        //           style:
-        //               TextStyle(color: darkColor, fontWeight: FontWeight.bold),
-        //         )),
-        //       ),
-        //     )
-        //   ],
-        // ),
-        // bottomNavigationBar: BottomNavigationBar(
-        //   backgroundColor: Color(0xFF1C617A), // Set background color
-        //   elevation: 5,
-        //   currentIndex: _selectedIndex,
-        //   selectedItemColor: Color(0xFF1C617A),
-        //   unselectedItemColor: Colors.blue,
-        //   onTap: (index) {
-        //     print('check $index');
-        //     _selectedIndex = index;
-        //     setState(() {
-        //
-        //     });
-        //   },
-        //   items: [
-        //     BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home",),
-        //     BottomNavigationBarItem(icon: Icon(Icons.category), label: "Categories"),
-        //     BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profile"),
-        //     BottomNavigationBarItem(icon: Icon(Icons.search), label: "Search")
-        //   ],
-        // ),
         body: Padding(
             padding: EdgeInsets.all(16),
             child: SingleChildScrollView(
@@ -125,7 +80,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      "Followed Channels",
+                      "My Channels",
                       style: TextStyle(fontSize: 24),
                     ),
                     SizedBox(height: 12,),
