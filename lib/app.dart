@@ -15,7 +15,8 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: EntryScreen(),
+      debugShowCheckedModeBanner: false,
+      home: LoginPage(),
       theme: ThemeData(
         inputDecorationTheme: InputDecorationTheme(
           // Customize the appearance of TextField

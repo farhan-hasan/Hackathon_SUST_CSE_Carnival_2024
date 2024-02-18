@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learnloom/pages/login_page.dart';
 import 'package:learnloom/pages/my_channel_page.dart';
 
 class ProfilePage extends StatefulWidget {
@@ -91,7 +92,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 },
                 child: Text('Save'),
               ),
-              SizedBox(height: 150),
+              SizedBox(height: 120),
               SizedBox(
                   width: double.infinity,
                   height: 50,
@@ -104,7 +105,21 @@ class _ProfilePageState extends State<ProfilePage> {
                         style: TextStyle(color: Colors.white),
                       ),
                       style: ElevatedButton.styleFrom(
-                          backgroundColor: Color(0xFF1C617A))))
+                          backgroundColor: Color(0xFF1C617A)))),
+              SizedBox(height: 10),
+              SizedBox(
+                  width: double.infinity,
+                  height: 50,
+                  child: ElevatedButton(
+                      onPressed: () {
+                        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => LoginPage()));
+                      },
+                      child: Text(
+                        "Logout",
+                        style: TextStyle(color: Colors.white),
+                      ),
+                      style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.red)))
             ])),
       ),
     );

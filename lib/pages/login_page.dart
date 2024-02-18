@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learnloom/app.dart';
 import 'package:learnloom/pages/register_page.dart';
 
 class LoginPage extends StatelessWidget {
@@ -58,7 +59,9 @@ class LoginPage extends StatelessWidget {
                 child: SizedBox(
                   height: 50,
                   width: 200,
-                  child: ElevatedButton(onPressed: () {} , child: Text(
+                  child: ElevatedButton(onPressed: () {
+                    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => EntryScreen()));
+                  } , child: Text(
                     'Login',
                     style: TextStyle(
                       color: Colors.white,
